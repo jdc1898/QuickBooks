@@ -1,0 +1,56 @@
+{
+  "name": "fullstack/quickbooks",
+  "description": "Laravel Client for QuickBooks.",
+  "keywords": [
+    "quickbooks",
+    "client",
+    "laravel",
+    "fullstack"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "David Church",
+      "email": "david.church@fullstackllc.net"
+    }
+  ],
+  "require": {
+    "php": "^8.1",
+    "illuminate/database": "^10",
+    "illuminate/http": "^10",
+    "illuminate/routing": "^10",
+    "illuminate/support": "^10",
+    "nesbot/carbon": "^2.62.1",
+    "quickbooks/v3-php-sdk": "^6.1"
+    },
+  "require-dev": {
+    "laravel/pint": "^1.2",
+    "mockery/mockery": "^1.5.1",
+    "phpunit/phpunit": "^9.5.8",
+    "psy/psysh": "^0.11",
+    "scrutinizer/ocular": "^1.9"
+  },
+  "autoload": {
+    "psr-4": {
+      "FullStack\\QuickBooks\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "FullStack\\QuickBooks\\": "tests/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "FullStack\\QuickBooks\\Providers\\ServiceProvider",
+        "FullStack\\QuickBooks\\Providers\\ClientServiceProvider"
+      ]
+    }
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
