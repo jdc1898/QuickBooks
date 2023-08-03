@@ -1,4 +1,4 @@
-#Laravel QuickBooks Client
+# Laravel QuickBooks Client
 
 PHP client wrapping the [QuickBooks PHP SDK](https://github.com/intuit/QuickBooks-V3-PHP-SDK).
 
