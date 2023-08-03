@@ -14,7 +14,7 @@ $ composer require FullStack/quickbooks
 2. Run our migration to install the `quickbooks_tokens` table:
 
 ```bash
-$ php artisan migrate --package=FullStack/quickbooks
+$ php artisan migrate
 ```
 
 The package uses the [auto registration feature](https://laravel.com/docs/packages#package-discovery) of Laravel.
